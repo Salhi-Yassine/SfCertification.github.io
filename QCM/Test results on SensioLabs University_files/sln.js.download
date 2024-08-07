@@ -1,0 +1,289 @@
+
+const SLNBar = {
+    'ads': '\u005B\u007B\u0022href\u0022\u003A\u0022https\u003A\\\/\\\/www.blackfire.io\\\/\u003Futm_source\u003Dsymfony\\u0026utm_medium\u003Dbanner\\u0026utm_campaign\u003Dprofiler\u0022,\u0022icon\u0022\u003A\u0022https\u003A\\\/\\\/connect.symfony.com\\\/uploads\\\/sln\\\/1c5498dd\u002D0649\u002D4d42\u002Daf4b\u002D1de957825f62\\\/8a08e0e0\u002Dcc2d\u002D490f\u002D9a2f\u002D882979624a7f.png\u0022,\u0022short_text\u0022\u003A\u0022Blackfire.io\u0022,\u0022medium_text\u0022\u003A\u0022Blackfire.io\u003A\u0020Fire\u0020up\u0020your\u0020PHP\u0020apps\u0020performance\u0022,\u0022long_text\u0022\u003A\u0022Blackfire.io\u003A\u0020Fire\u0020up\u0020your\u0020PHP\u0020apps\u0020performance\u0022,\u0022ga\u0022\u003A\u0022blackfire\u0022\u007D,\u007B\u0022href\u0022\u003A\u0022https\u003A\\\/\\\/insight.symfony.com\u0022,\u0022icon\u0022\u003A\u0022https\u003A\\\/\\\/connect.symfony.com\\\/uploads\\\/sln\\\/1991a94e\u002D4351\u002D4af1\u002D88ab\u002D4f17f6d20f45\\\/8697a26e\u002D20ac\u002D429a\u002D8da7\u002D510bf022a7c8.png\u0022,\u0022short_text\u0022\u003A\u0022SymfonyInsight\u0022,\u0022medium_text\u0022\u003A\u0022SymfonyInsight\u003A\u0020The\u0020life\u0020jacket\u0020for\u0020your\u0020projects\u0022,\u0022long_text\u0022\u003A\u0022SymfonyInsight\u0020helps\u0020you\u0020protect\u0020your\u0020projects\u0020against\u0020security\u0020issues\u0020and\u0020technical\u0020debt.\u0022,\u0022ga\u0022\u003A\u0022sl_insight\u0022\u007D,\u007B\u0022href\u0022\u003A\u0022https\u003A\\\/\\\/symfony.com\\\/book\u0022,\u0022icon\u0022\u003A\u0022https\u003A\\\/\\\/connect.symfony.com\\\/uploads\\\/sln\\\/9dcfe3b7\u002D4ac7\u002D4fd7\u002Dbdaa\u002Dd690f48b40da\\\/48b70252\u002D5e84\u002D4200\u002Dab44\u002Dfed8cd091b60.png\u0022,\u0022short_text\u0022\u003A\u0022Learn\u0020Symfony\u0020today\u0022,\u0022medium_text\u0022\u003A\u0022\\u0022Symfony\u003A\u0020The\u0020Fast\u0020Track\\u0022,\u0020a\u0020new\u0020book\u0020to\u0020learn\u0020Symfony\u0022,\u0022long_text\u0022\u003A\u0022\\u0022Symfony\u003A\u0020The\u0020Fast\u0020Track\\u0022,\u0020a\u0020new\u0020book\u0020to\u0020learn\u0020Symfony\u0022,\u0022ga\u0022\u003A\u0022book\u0022\u007D\u005D',
+    'isAuthenticated': null,
+    'uuid': '',
+    'fullName': '',
+    'needsEmailConfirmation': false,
+    'urlConnectHomepage': 'https\u003A\/\/connect.symfony.com\/',
+    'urlConnectAccount': 'https\u003A\/\/connect.symfony.com\/me',
+    'urlConnectLogout': 'https\u003A\/\/connect.symfony.com\/logout',
+    'urlConnectButton': '',
+    'searchActive' : false,
+    'searchPlaceholder': 'Search',
+    'searchUrl': '',
+    'searchUrlAutocomplete': '',
+    'searchUrlMethod': 'GET',
+    'searchAutocompleteMethod': 'GET',
+    'searchApiAlternateShow': '',
+    'searchApiImageShow': '',
+    'searchAutocompleteRenderItem': () => {},
+    'actions': {},
+    'separatedActions': {},
+
+    'render': function() {
+        template = '\u003Cdiv\u0020class\u003D\u0022sln\u002Dbar\u0022\u003E\n\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Dbar\u002Dinner\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Dnetwork\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Ca\u0020href\u003D\u0022\u0023\u0022\u0020title\u003D\u0022Toggle\u0020Symfony\u0020menu\u0022\u0020class\u003D\u0022sln\u002Dhidden\u002Dphone\u0022\u003ESymfony\u003Cspan\u003EHub\u003C\/span\u003E\u003C\/a\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Ca\u0020href\u003D\u0022\u0023\u0022\u0020title\u003D\u0022Toggle\u0020Symfony\u0020menu\u0022\u0020class\u003D\u0022sln\u002Dvisible\u002Dphone\u0022\u003ESF\u003Cspan\u003EH\u003C\/span\u003E\u003C\/a\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/div\u003E\u0020__AD__\u0020__SEARCH__\u0020__USER__\n\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u0020\u0020\u0020\u0020__DROPDOWN_NETWORK__\n\u0020\u0020\u0020\u0020__DROPDOWN_USER__\n\u003C\/div\u003E\n';
+
+        template = template.replace(/__AD__/g, this.renderAds())
+                           .replace(/__SEARCH__/g, this.renderSearch())
+                           .replace(/__USER__/g, this.renderUser())
+                           .replace(/__USER_CONTAINER_CLASS__/g, this.needsEmailConfirmation ? 'sln-user sln-user-unconfirmed' : 'sln-user')
+                           .replace(/__DROPDOWN_NETWORK__/g, this.renderDropdownNetwork())
+                           .replace(/__DROPDOWN_USER__/g, this.renderDropdownUser())
+                           .replace(/__DROPDOWN_SEARCH__/g, this.renderDropdownSearch());
+
+        return template;
+    },
+    'renderSearch': function() {
+        template = '\u003Cdiv\u0020class\u003D\u0022sln\u002Dsearch\u0022\u003E\n\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Dsearch\u002Ddeactivated\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Ca\u0020href\u003D\u0022\u0023\u0022\u0020title\u003D\u0022Search\u0022\u0020aria\u002Dlabel\u003D\u0022Search\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cspan\u0020aria\u002Dhidden\u003D\u0022true\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Csvg\u0020xmlns\u003D\u0022http\u003A\/\/www.w3.org\/2000\/svg\u0022\u0020width\u003D\u002218\u0022\u0020height\u003D\u002218\u0022\u0020viewBox\u003D\u00220\u00200\u002024\u002024\u0022\u0020stroke\u002Dwidth\u003D\u00223.5\u0022\u0020stroke\u003D\u0022white\u0022\u0020fill\u003D\u0022none\u0022\u0020stroke\u002Dlinecap\u003D\u0022round\u0022\u0020stroke\u002Dlinejoin\u003D\u0022round\u0022\u0020style\u003D\u0022margin\u003A\u00200\u002013px\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cpath\u0020stroke\u003D\u0022none\u0022\u0020d\u003D\u0022M0\u00200h24v24H0z\u0022\u0020fill\u003D\u0022none\u0022\/\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cpath\u0020d\u003D\u0022M10\u002010m\u002D7\u00200a7\u00207\u00200\u00201\u00200\u002014\u00200a7\u00207\u00200\u00201\u00200\u0020\u002D14\u00200\u0022\u0020\/\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cpath\u0020d\u003D\u0022M21\u002021l\u002D6\u0020\u002D6\u0022\u0020\/\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/svg\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/span\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/a\u003E\n\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Dsearch\u002Dactivated\u0020sln\u002Dhidden\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Ca\u0020href\u003D\u0022\u0023\u0022\u0020title\u003D\u0022Search\u0022\u0020aria\u002Dlabel\u003D\u0022Search\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cspan\u0020aria\u002Dhidden\u003D\u0022true\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Csvg\u0020xmlns\u003D\u0022http\u003A\/\/www.w3.org\/2000\/svg\u0022\u0020width\u003D\u002218\u0022\u0020height\u003D\u002218\u0022\u0020viewBox\u003D\u00220\u00200\u002024\u002024\u0022\u0020stroke\u002Dwidth\u003D\u00223.5\u0022\u0020stroke\u003D\u0022\u0023222\u0022\u0020fill\u003D\u0022none\u0022\u0020stroke\u002Dlinecap\u003D\u0022round\u0022\u0020stroke\u002Dlinejoin\u003D\u0022round\u0022\u0020style\u003D\u0022margin\u003A\u00200\u002013px\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cpath\u0020stroke\u003D\u0022none\u0022\u0020d\u003D\u0022M0\u00200h24v24H0z\u0022\u0020fill\u003D\u0022none\u0022\/\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cpath\u0020d\u003D\u0022M10\u002010m\u002D7\u00200a7\u00207\u00200\u00201\u00200\u002014\u00200a7\u00207\u00200\u00201\u00200\u0020\u002D14\u00200\u0022\u0020\/\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cpath\u0020d\u003D\u0022M21\u002021l\u002D6\u0020\u002D6\u0022\u0020\/\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/svg\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/span\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/a\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cform\u0020method\u003D\u0022__METHOD__\u0022\u0020action\u003D\u0022__ACTION__\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cinput\u0020name\u003D\u0022q\u0022\u0020id\u003D\u0022sln\u002Dautocomplete\u0022\u0020autocomplete\u003D\u0022off\u0022\u0020type\u003D\u0022text\u0022\u0020title\u003D\u0022Search\u0020terms\u0022\u0020aria\u002Dlabel\u003D\u0022Search\u0020terms\u0022\u0020placeholder\u003D\u0022__PLACEHOLDER__\u0022\u0020\/\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cbutton\u0020class\u003D\u0022visually\u002Dhidden\u0022\u003ESearch\u003C\/button\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/form\u003E\n\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u003C\/div\u003E\n';
+        if (this.searchActive == true) {
+            return template.replace(/__METHOD__/g, this.searchUrlMethod)
+                           .replace(/__ACTION__/g, this.searchUrl)
+                           .replace(/__PLACEHOLDER__/g, this.searchPlaceholder);
+        }
+
+        return '';
+    },
+    'renderUser': function() {
+        template = '\u003Cdiv\u0020class\u003D\u0022__USER_CONTAINER_CLASS__\u0022\u003E\u0020__USER_STATE__\u0020\u003C\/div\u003E\n';
+        if (this.isAuthenticated) {
+            state = '\u0020\u0020\u0020\u0020\u003Ca\u0020class\u003D\u0022sln\u002Duser\u002Dconnected\u0022\u0020href\u003D\u0022\u0023\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cimg\u0020loading\u003D\u0022eager\u0022\u0020src\u003D\u0022https\u003A\/\/connect.symfony.com\/api\/images\/__UUID__.png\u003Fformat\u003D60x60\u0022\u0020width\u003D\u002230\u0022\u0020height\u003D\u002230\u0022\u0020alt\u003D\u0022__FULLNAME__\u0022\/\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cspan\u0020class\u003D\u0022sln\u002Duser\u002Dname\u0020sln\u002Dhidden\u002Dphone\u0022\u003E__FULLNAME_HTML__\u003C\/span\u003E\n\u0020\u0020\u0020\u0020\u003C\/a\u003E\n';
+            state = state.replace(/__UUID__/g, this.uuid)
+                         .replace(/__FULLNAME__/g, this.fullName)
+                         .replace(/__FULLNAME_HTML__/g, this.fullName + (this.needsEmailConfirmation ? ' <span style="font-size: 9px">unconfirmed</span>' : ''));
+
+            return template.replace(/__USER_STATE__/g, state);
+        } else if (!this.isAuthenticated && this.urlConnectButton != '') {
+            state = '\u0020\u0020\u0020\u0020\u003Ca\u0020href\u003D\u0022__CONNECT_URL__\u0022\u0020class\u003D\u0022sln\u002Dconnect\u0022\u003E\u0020Connect\u0020\u003C\/a\u003E\n';
+            state = state.replace(/__CONNECT_URL__/g, this.urlConnectButton);
+
+            return template.replace(/__USER_STATE__/g, state);
+        }
+
+        return '';
+    },
+    'renderDropdownNetwork': function() {
+        return '\u003Cdiv\u0020class\u003D\u0022sln\u002Ddropdown\u002Dnetwork\u0020sln\u002Ddropdown\u0020sln\u002Dhidden\u0022\u003E\n\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Dcontainer\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Drow\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Dspan6\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Drow\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Dspan3\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cimg\u0020loading\u003D\u0022lazy\u0022\u0020src\u003D\u0022https\u003A\/\/connect.symfony.com\/assets\/images\/sln\u002Dv2\/sensiolabs\u002Df4081cb7d0feb70206e3249b9d4e0624.png\u0022\u0020alt\u003D\u0022SensioLabs\u0022\u0020\/\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cp\u003ESince\u00201998,\u0020SensioLabs\u0020has\u0020been\u0020promoting\u0020the\u0020Open\u002DSource\u0020software\u0020movement\u0020by\u0020providing\u0020quality\u0020and\u0020performant\u0020web\u0020application\u0020development\u0020products,\u0020trainings,\u0020\u0020and\u0020consulting.\u0020SensioLabs\u0020also\u0020supports\u0020multiple\u0020important\u0020Open\u002DSource\u0020projects.\u003C\/p\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cul\u0020class\u003D\u0022sln\u002Dwebsites\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cli\u003E\u003Ca\u0020href\u003D\u0022https\u003A\/\/sensiolabs.com\/en\u0022\u003EInternational\u003C\/a\u003E\u003C\/li\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cli\u003E\u003Ca\u0020href\u003D\u0022https\u003A\/\/sensiolabs.com\/fr\u0022\u003EFrance\u003C\/a\u003E\u003C\/li\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/ul\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Dspan3\u0020sln\u002Dhighlights\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Ch2\u003EIn\u0020the\u0020Spotlight\u003C\/h2\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cdiv\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Ca\u0020href\u003D\u0022https\u003A\/\/insight.symfony.com\/\u0022\u0020alt\u003D\u0022SymfonyInsight,\u0020PHP\u0020Project\u0020Quality\u0020Done\u0020Right\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cimg\u0020loading\u003D\u0022lazy\u0022\u0020src\u003D\u0022https\u003A\/\/connect.symfony.com\/assets\/images\/sln\u002Dv2\/symfonyinsight\u002D1f0a66890dfbc4ac40219ca00d1ee63e.png\u0022\u0020alt\u003D\u0022SymfonyInsight\u0022\u0020style\u003D\u0022width\u003A\u0020226px\u0022\u0020\/\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/a\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cdiv\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Ca\u0020href\u003D\u0022https\u003A\/\/www.blackfire.io\/\u003Futm_source\u003Dsymfony\u0026utm_medium\u003Dbanner\u0026utm_campaign\u003Dprofiler\u0022\u0020alt\u003D\u0022Blackfire,\u0020Fire\u0020up\u0020your\u0020PHP\u0020App\u0020Performance\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cimg\u0020loading\u003D\u0022lazy\u0022\u0020src\u003D\u0022https\u003A\/\/connect.symfony.com\/assets\/images\/sln\u002Dv2\/blackfire\u002D71ae8d7d1a6e2cf9e4ac1c438e69487c.png\u0022\u0020alt\u003D\u0022Blackfire\u0022\u0020\/\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/a\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Dspan6\u0020sln\u002Dproducts\u002Dlisting\u0020sln\u002Dright\u002Dbox\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Drow\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Dspan3\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Ch2\u003EOpen\u0020Source\u003C\/h2\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cul\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cli\u003E\u003Ca\u0020href\u003D\u0022https\u003A\/\/symfony.com\u0022\u003ESymfony\u0020\u002D\u0020Web\u0020framework\u003C\/a\u003E\u003C\/li\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cli\u003E\u003Ca\u0020href\u003D\u0022https\u003A\/\/twig.symfony.com\u0022\u0020alt\u003D\u0022Twig,\u0020The\u0020flexible,\u0020fast,\u0020and\u0020secure\u0020template\u0020engine\u0020for\u0020PHP\u0022\u003ETwig\u0020\u002D\u0020Templating\u003C\/a\u003E\u003C\/li\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cli\u003E\u003Ca\u0020href\u003D\u0022https\u003A\/\/github.com\/symfony\/polyfill\u0022\u0020alt\u003D\u0022Polyfills\u0020for\u0020common\u0020PHP\u0020extensions\u0022\u003EPHP\u0020Polyfills\u003C\/a\u003E\u003C\/li\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/ul\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Dspan3\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Ch2\u003EProducts\u003C\/h2\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cul\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cli\u003E\u003Ca\u0020href\u003D\u0022https\u003A\/\/insight.symfony.com\u0022\u0020alt\u003D\u0022SymfonyInsight,\u0020PHP\u0020Project\u0020Quality\u0020Done\u0020Right\u0022\u003EInsight\u003A\u0020PHP\u0020Quality\u003C\/a\u003E\u003C\/li\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cli\u003E\u003Ca\u0020href\u003D\u0022https\u003A\/\/www.blackfire.io\/\u003Futm_source\u003Dsymfony\u0026utm_medium\u003Dbanner\u0026utm_campaign\u003Dprofiler\u0022\u0020alt\u003D\u0022Blackfire,\u0020Fire\u0020up\u0020your\u0020PHP\u0020App\u0020Performance\u0022\u003EBlackfire\u003A\u0020Web\u0020App\u0020performance\u003C\/a\u003E\u003C\/li\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cli\u003E\u003Ca\u0020href\u003D\u0022https\u003A\/\/symfony.com\/cloud\u0022\u0020alt\u003D\u0022Platform.sh,\u0020the\u0020Official\u0020Symfony\u0020PaaS\u0022\u003EPlatform.sh\u003A\u0020The\u0020Official\u0020Symfony\u0020PaaS\u003C\/a\u003E\u003C\/li\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/ul\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Drow\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Dspan3\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Ch2\u003ESolutions\u0020\u0026amp\u003B\u0020Services\u003C\/h2\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cul\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cli\u003E\u003Ca\u0020href\u003D\u0022https\u003A\/\/training.sensiolabs.com\u0022\u003ETraining\u003C\/a\u003E\u003C\/li\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cli\u003E\u003Ca\u0020href\u003D\u0022https\u003A\/\/certification.symfony.com\/\u0022\u003ECertification\u003C\/a\u003E\u003C\/li\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cli\u003E\u003Ca\u0020href\u003D\u0022https\u003A\/\/sensiolabs.com\/solutions\u0022\u003ETechnical\u0020Solutions\u003C\/a\u003E\u003C\/li\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cli\u003E\u003Ca\u0020href\u003D\u0022https\u003A\/\/university.sensiolabs.com\u0022\u003ESensioLabs\u0020University\u003C\/a\u003E\u003C\/li\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cli\u003E\u003Ca\u0020href\u003D\u0022https\u003A\/\/expert.sensiolabs.com\u0022\u003EExperts\u003C\/a\u003E\u003C\/li\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/ul\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Dspan3\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Ch2\u003ECommunity\u003C\/h2\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cul\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cli\u003E\u003Ca\u0020href\u003D\u0022https\u003A\/\/connect.symfony.com\u0022\u003ECommunity\u003C\/a\u003E\u003C\/li\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cli\u003E\u003Ca\u0020href\u003D\u0022https\u003A\/\/live.symfony.com\u0022\u003EConferences\u003C\/a\u003E\u003C\/li\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cli\u003E\u003Ca\u0020href\u003D\u0022https\u003A\/\/www.youtube.com\/symfonytv\u0022\u003EVideos\u003C\/a\u003E\u003C\/li\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cli\u003E\u003Ca\u0020href\u003D\u0022https\u003A\/\/network.sensiolabs.com\/en\/\u0022\u003EPartners\u003C\/a\u003E\u003C\/li\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/ul\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Dright\u002Dbox\u0020sln\u002Dour\u002Dblogs\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Drow\u0020\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Dspan5\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Ch2\u003EBlogs\u003C\/h2\u003E\u0026nbsp\u003B\u0026nbsp\u003B\u0026nbsp\u003B\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Ca\u0020href\u003D\u0022https\u003A\/\/symfony.com\/blog\/\u0022\u003ESymfony\u003C\/a\u003E,\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Ca\u0020href\u003D\u0022https\u003A\/\/blog.sensiolabs.com\u0022\u003ESensioLabs\u003C\/a\u003E,\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Ca\u0020href\u003D\u0022https\u003A\/\/blog.insight.symfony.com\u0022\u003EInsight\u003C\/a\u003E,\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020and\u0020\u003Ca\u0020href\u003D\u0022https\u003A\/\/blog.blackfire.io\/\u003Futm_source\u003Dsymfony\u0026utm_medium\u003Dbanner\u0026utm_campaign\u003Dprofiler\u0022\u003EBlackfire\u003C\/a\u003E.\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u003C\/div\u003E\n';
+    },
+    'renderDropdownUser': function() {
+        template = '\u003Cdiv\u0020class\u003D\u0022sln\u002Ddropdown\u002Duser\u0020sln\u002Ddropdown\u0020sln\u002Dhidden\u0022\u003E\n\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Dcontainer\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Drow\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Duser\u002Dactions\u0020sln\u002Dspan3\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cul\u003E\u0020__ACTIONS__\u0020\u003C\/ul\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Dspan9\u0020sln\u002Dnotifications\u002Dcontainer\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Ch2\u003EYour\u0020notifications\u003A\u003C\/h2\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020In\u0020order\u0020to\u0020see\u0020your\u0020notifications,\u0020please\u0020\u003Ca\u0020href\u003D\u0022https\u003A\/\/connect.symfony.com\/login\u0022\u003Elogin\u0020to\u0020your\u0020SymfonyConnect\u0020account\u003C\/a\u003E\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u003C\/div\u003E\n';
+        if (!this.isAuthenticated) {
+            return '';
+        }
+
+        var processActions = function(actions) {
+            actionList = '';
+            for (key in actions) {
+                action = actions[key];
+                actionTemplate = '\u003Cli\u003E\u003Ca\u0020href\u003D\u0022__HREF__\u0022\u003E__TEXT__\u003C\/a\u003E\u003C\/li\u003E\n';
+                actionTemplate = actionTemplate.replace(/__HREF__/g, action.url);
+                actionTemplate = actionTemplate.replace(/__TEXT__/g, action.label);
+
+                actionList += actionTemplate;
+            }
+
+            return actionList;
+        }
+
+        actions = processActions(this.actions);
+        separated = processActions(this.separatedActions);
+        if (separated != '') {
+            actions += '\u003Cli\u0020class\u003D\u0022sln\u002Dseparator\u0022\u003E\u003C\/li\u003E\n';
+            actions += separated;
+        }
+
+        return template.replace(/__ACTIONS__/g, actions);
+    },
+    'renderAds': function() {
+        let ads = JSON.parse(this.ads);
+        if (ads && ads.length > 0) {
+            let ad = ads[Math.floor((Math.random()*ads.length))];
+            template = '\u003Cdiv\u0020class\u003D\u0022sln\u002Dhighlight\u0022\u003E\n\u0020\u0020\u0020\u0020\u003Ca\u0020href\u003D\u0022__HREF__\u0022\u0020class\u003D\u0022sln\u002Dvisible\u002Dphone\u0022\u003E\u003Cimg\u0020src\u003D\u0022__ICON__\u0022\u0020alt\u003D\u0022__TEXT_SHORT__\u0020icon\u0022\u0020width\u003D\u002230\u0022\u0020height\u003D\u002230\u0022\/\u003E\u0020__TEXT_SHORT__\u003C\/a\u003E\n\u0020\u0020\u0020\u0020\u003Ca\u0020href\u003D\u0022__HREF__\u0022\u0020class\u003D\u0022sln\u002Dvisible\u002Dtablet\u0022\u003E\u003Cimg\u0020src\u003D\u0022__ICON__\u0022\u0020alt\u003D\u0022__TEXT_SHORT__\u0020icon\u0022\u0020width\u003D\u002230\u0022\u0020height\u003D\u002230\u0022\u0020\/\u003E\u0020__TEXT_MEDIUM__\u003C\/a\u003E\n\u0020\u0020\u0020\u0020\u003Ca\u0020href\u003D\u0022__HREF__\u0022\u0020class\u003D\u0022sln\u002Dvisible\u002Ddesktop\u0022\u003E\u003Cimg\u0020src\u003D\u0022__ICON__\u0022\u0020alt\u003D\u0022__TEXT_SHORT__\u0020icon\u0022\u0020width\u003D\u002230\u0022\u0020height\u003D\u002230\u0022\u0020\/\u003E\u0020__TEXT_LONG__\u003C\/a\u003E\n\u003C\/div\u003E\n';
+            return template.replace(/__HREF__/g, ad.href)
+                           .replace(/__ICON__/g, ad.icon)
+                           .replace(/__TEXT_SHORT__/g, ad.short_text)
+                           .replace(/__TEXT_MEDIUM__/g, ad.medium_text)
+                           .replace(/__TEXT_LONG__/g, ad.long_text)
+        }
+
+        return '';
+    },
+    'renderDropdownSearch': function() {
+        if (!this.searchActive) {
+            return '';
+        }
+
+        return '\u003Cdiv\u0020class\u003D\u0022sln\u002Ddropdown\u0020sln\u002Ddropdown\u002Dsearch\u0020sln\u002Dhidden\u0022\u003E\n\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Dcontainer\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Drow\u0022\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003Cdiv\u0020class\u003D\u0022sln\u002Doffset9\u0020sln\u002Dspan3\u0020sln\u002Dautocomplete\u002Dcontainer\u0022\u003E\u003C\/div\u003E\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u0020\u0020\u0020\u0020\u003C\/div\u003E\n\u003C\/div\u003E\n';
+    },
+    'bindEvents': function() {
+        let slnNetworkLinks = document.querySelectorAll('.sln-network a');
+        slnNetworkLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                let elm;
+                elm = document.querySelector('.sln-dropdown-user');
+                if (elm) {
+                    elm.classList.add('sln-hidden');
+                }
+
+                elm = document.querySelector('.sln-dropdown-network');
+                if (elm) {
+                    elm.classList.toggle('sln-hidden');
+                }
+
+                elm = document.querySelector('.sln-dropdown-network');
+                if (elm) {
+                    elm.classList.toggle('sln-open');
+                }
+
+                elm = document.querySelector('.sln-search-activated');
+                if (elm) {
+                    elm.classList.add('sln-hidden');
+                }
+
+                elm = document.querySelector('.sln-search-deactivated');
+                if (elm) {
+                    elm.classList.remove('sln-hidden');
+                }
+
+                elm = document.querySelector('#sln');
+                if (elm) {
+                    elm.style.height = document.querySelector('.sln-bar').offsetHeight + 'px';
+                }
+
+                let slnDropdownOpen = document.querySelector('.sln-dropdown-network.sln-open a');
+            });
+        });
+
+        if (this.isAuthenticated) {
+            document.querySelector('.sln-user a').addEventListener('click', (e) => {
+                e.preventDefault();
+
+                let elm;
+                elm = document.querySelector('.sln-dropdown-user');
+                if (elm) {
+                    elm.classList.toggle('sln-hidden');
+                }
+
+                elm = document.querySelector('.sln-dropdown-network');
+                if (elm) {
+                    elm.classList.add('sln-hidden');
+                }
+
+                elm = document.querySelector('.sln-search-activated');
+                if (elm) {
+                    elm.classList.add('sln-hidden');
+                }
+
+                elm = document.querySelector('.sln-search-deactivated');
+                if (elm) {
+                    elm.classList.remove('sln-hidden');
+                }
+
+                elm = document.querySelector('#sln');
+                if (elm) {
+                    elm.style.height = document.querySelector('.sln-bar').offsetHeight + 'px';
+                }
+            });
+        }
+
+        if (this.searchActive) {
+            document.querySelector('.sln-search a').addEventListener('click', (e) => {
+                e.preventDefault();
+
+                let elm;
+                elm = document.querySelector('.sln-dropdown-user');
+                if (elm) {
+                    elm.classList.add('sln-hidden');
+                }
+
+                elm = document.querySelector('.sln-dropdown-network');
+                if (elm) {
+                    elm.classList.add('sln-hidden');
+                }
+
+                elm = document.querySelector('.sln-search-activated');
+                if (elm) {
+                    elm.classList.toggle('sln-hidden');
+                }
+                elm = document.querySelector('.sln-search-deactivated');
+                if (elm) {
+                    elm.classList.toggle('sln-hidden');
+                }
+
+                elm = document.querySelector('#sln');
+                if (elm) {
+                    elm.style.height = document.querySelector('.sln-bar').offsetHeight + 'px';
+                }
+
+                elm = document.querySelector('#sln-autocomplete');
+                if (elm) {
+                    elm.focus();
+                }
+            });
+
+            this.bindSearch();
+        }
+
+        if (this.isAuthenticated) {
+            this.loadNotifications();
+        }
+    },
+        'bindSearch': function() {
+        let slnAutocomplete = document.querySelector('#sln-autocomplete');
+
+        if (slnAutocomplete) {
+            let autocompleteMenu = document.createElement('ul');
+            autocompleteMenu.classList.add('sln-autocomplete-menu');
+            autocompleteMenu.style.display = 'none';
+
+            slnAutocomplete.addEventListener('focus', (e) => {
+                autocompleteMenu.style.display = 'block';
+            });
+
+            slnAutocomplete.addEventListener('click', (e) => e.stopPropagation());
+            autocompleteMenu.addEventListener('click', (e) => e.stopPropagation());
+            window.addEventListener('click', (e) => {
+                if (!e.target.matches('#sln-autocomplete')) {
+                    autocompleteMenu.style.display = 'none';
+                }
+            });
+
+            document.querySelector('body').append(autocompleteMenu);
+            let lastQuery = null;
+            let lastOperation = null;
+            slnAutocomplete.addEventListener('keyup', (e) => {
+                if (lastOperation) {
+                    clearTimeout(lastOperation);
+                }
+
+                lastOperation = setTimeout(() => {
+                    let query = slnAutocomplete.value;
+                    if (query.length <= 2) {
+                        autocompleteMenu.style.display = 'none';
+                        return;
+                    }
+
+                    autocompleteMenu.style.display = 'block';
+                    if (lastQuery && lastQuery.trim() === query.trim()) {
+                        return ;
+                    }
+
+                    autocompleteMenu.innerHTML =  `<li class='all-results primary'><a href='${SLNBar.searchUrl}?q=${query}'>Show all results...</a></li>`;
+                    lastQuery = query;
+                    if (!SLNBar.searchUrlAutocomplete.includes('//')) {
+                       SLNBar.searchUrlAutocomplete = window.location.origin + SLNBar.searchUrlAutocomplete;
+                    }
+
+                    let url = new URL(SLNBar.searchUrlAutocomplete);
+                    url.searchParams.set('term', query);
+                    fetch(url.toString()).then(response => response.json()).then(items => {
+                        items.forEach(item => SLNBar.searchAutocompleteRenderItem({ul: autocompleteMenu, item: item, first: ''}));
+                    });
+                }, 400);
+            });
+        }
+    }
+}
+
